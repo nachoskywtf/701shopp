@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <style>
+    .text-top {
+      font-family: 'Arial Black', Impact, sans-serif;
+      font-size: 160px;
+      font-weight: 900;
+      fill: #ffffff;
+      stroke: #111111;
+      stroke-width: 12px;
+      stroke-linejoin: round;
+      letter-spacing: -5px;
+    }
+    .text-bottom {
+      font-family: 'Arial Black', Impact, sans-serif;
+      font-size: 130px;
+      font-weight: 900;
+      fill: #ffffff;
+      stroke: #111111;
+      stroke-width: 10px;
+      stroke-linejoin: round;
+      letter-spacing: -2px;
+    }
+  </style>
+  <text x="50%" y="150" text-anchor="middle" class="text-top">701</text>
+  <text x="50%" y="260" text-anchor="middle" class="text-bottom">SHOP</text>
+</svg>

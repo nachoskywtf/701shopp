@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nombre": "Coco Noir",
+    "marca": "Chanel",
+    "precio": 189990,
+    "categoria": "Femenino",
+    "descripcion": "Fragancia oscura con notas de jazmín y patchouli.",
+    "stock": 12,
+    "imagen_principal": "/img/perfumes/chanel_coco_mademoiselle_100ml.jpg",
+    "imagenes": [
+      "/img/perfumes/chanel_coco_mademoiselle_100ml.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Bleu de Chanel",
+    "marca": "Chanel",
+    "precio": 175000,
+    "categoria": "Masculino",
+    "descripcion": "Fresco y amaderado con notas de cítricos y cedro.",
+    "stock": 8,
+    "imagen_principal": "/img/perfumes/chanel_bleu_de_chanel_edp.jpg",
+    "imagenes": [
+      "/img/perfumes/chanel_bleu_de_chanel_edp.jpg",
+      "/img/perfumes/chanel_bleu_de_chanel_edt.jpg",
+      "/img/perfumes/chanel_bleu_de_chanel_parfum.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Black Opium",
+    "marca": "Yves Saint Laurent",
+    "precio": 165000,
+    "categoria": "Femenino",
+    "descripcion": "Adictivo con notas de café, vainilla y flor de azahar.",
+    "stock": 15,
+    "imagen_principal": "/img/perfumes/yves_saint_laurent_black_opium_le_parfum_90ml.jpg",
+    "imagenes": [
+      "/img/perfumes/yves_saint_laurent_black_opium_le_parfum_90ml.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Sauvage",
+    "marca": "Dior",
+    "precio": 182000,
+    "categoria": "Masculino",
+    "descripcion": "Salvaje con bergamota de Calabria y Ambroxan.",
+    "stock": 20,
+    "imagen_principal": "/img/perfumes/dior_sauvage_edp.jpg",
+    "imagenes": [
+      "/img/perfumes/dior_sauvage_edp.jpg",
+      "/img/perfumes/dior_sauvage_edt.jpg",
+      "/img/perfumes/dior_sauvage_parfum.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Good Girl",
+    "marca": "Carolina Herrera",
+    "precio": 158000,
+    "categoria": "Femenino",
+    "descripcion": "Floral oriental con jazmín sambac y tonka.",
+    "stock": 10,
+    "imagen_principal": "/img/perfumes/carolina_herrera_good_girl_80ml_edp.jpg",
+    "imagenes": [
+      "/img/perfumes/carolina_herrera_good_girl_80ml_edp.jpg",
+      "/img/perfumes/carolina_herrera_good_girl_edp_100_ml_refillable_m.jpg"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Jost:wght@300;400;500&display=swap');
+
+.section { max-width:1320px; margin:0 auto; padding:60px 24px; font-family:'Jost',sans-serif; }
+.header { text-align:center; margin-bottom:40px; }
+.titulo { font-family:'Cormorant Garamond',serif; font-size:clamp(2.5rem,5vw,4rem); font-weight:300; font-style:italic; color:#1a1814; letter-spacing:.04em; margin:0 0 8px; }
+.subtitulo { font-size:.75rem; letter-spacing:.18em; text-transform:uppercase; color:#a08c6e; margin:0; }
+.filtros { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:48px; }
+.filtroBtn { font-family:'Jost',sans-serif; font-size:.70rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#7a7065; background:transparent; border:1px solid #d4c5a9; padding:8px 20px; border-radius:1px; cursor:pointer; transition:all .2s; }
+.filtroBtn:hover { border-color:#8b7355; color:#8b7355; }
+.filtroActivo { background:#1a1814; border-color:#1a1814; color:#faf9f7; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:24px; }
+.loading { text-align:center; padding:80px 0; font-size:.85rem; letter-spacing:.12em; text-transform:uppercase; color:#a08c6e; }
+.carritoIndicador { position:fixed; bottom:28px; right:28px; background:#1a1814; color:#faf9f7; font-family:'Jost',sans-serif; font-size:.75rem; font-weight:500; letter-spacing:.1em; padding:12px 20px; border-radius:2px; box-shadow:0 8px 24px rgba(0,0,0,.2); z-index:1000; animation:slideUp .3s ease; }
+@keyframes slideUp { from{transform:translateY(20px);opacity:0} to{transform:translateY(0);opacity:1} }
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr);gap:14px;}}
