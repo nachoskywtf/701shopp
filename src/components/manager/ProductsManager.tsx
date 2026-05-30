@@ -132,8 +132,8 @@ export function ProductsManager() {
     setUploadingId(id);
     try {
       const fileExt = file.name.split('.').pop();
-      const fileName = \`\${id}-\${Math.random()}.\${fileExt}\`;
-      const filePath = \`\${fileName}\`;
+      const fileName = `${id}-${Math.random()}.${fileExt}`;
+      const filePath = `${fileName}`;
 
       const { error: uploadError } = await supabase.storage.from('perfumes').upload(filePath, file);
       if (uploadError) throw uploadError;
@@ -167,7 +167,7 @@ export function ProductsManager() {
             Gestor de Inventario Total (Real-time)
           </h2>
           <p style={{ color: '#6B7280', fontSize: 13, margin: 0 }}>
-            {loading ? 'Sincronizando con base de datos...' : \`Control en vivo conectado a Supabase. \${catalog.length} productos sincronizados.\`}
+            {loading ? 'Sincronizando con base de datos...' : `Control en vivo conectado a Supabase. ${catalog.length} productos sincronizados.`}
           </p>
         </div>
         

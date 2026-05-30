@@ -98,7 +98,7 @@ export function AnalyticsCFO() {
         {/* CASH FLOW SHIELD GAUGE */}
         <div style={{
           background: isRisk ? '#FEF2F2' : '#F0FDF4',
-          border: \`1px solid \${isRisk ? '#FCA5A5' : '#86EFAC'}\`,
+          border: `1px solid ${isRisk ? '#FCA5A5' : '#86EFAC'}`,
           borderRadius: 12,
           padding: '12px 20px',
           display: 'flex',
@@ -186,12 +186,12 @@ export function AnalyticsCFO() {
                 fontSize={11}
                 tickLine={false}
                 axisLine={false}
-                tickFormatter={(value) => \`$\${value.toLocaleString('es-CL')}\`}
+                tickFormatter={(value) => `$${value.toLocaleString('es-CL')}`}
               />
               <Tooltip
                 contentStyle={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: 8, fontSize: 12, boxShadow: '0 10px 25px -5px rgba(0,0,0,0.1)' }}
                 itemStyle={{ color: '#111827', fontWeight: 600 }}
-                formatter={(value: number) => [\`$\${value.toLocaleString('es-CL')}\`, 'Facturado']}
+                formatter={(value: number) => [`$${value.toLocaleString('es-CL')}`, 'Facturado']}
               />
               <Area type="monotone" dataKey="total" stroke="#111827" strokeWidth={3} fillOpacity={1} fill="url(#colorTotal)" />
             </AreaChart>
