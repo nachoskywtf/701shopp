@@ -105,5 +105,11 @@
     "typescript-eslint": "^8.56.1",
     "vite": "^8.0.10",
     "vite-tsconfig-paths": "^6.1.1"
+  },
+  "overrides": {
+    "react-simple-maps": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   }
 }
