@@ -1,4 +1,6 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 
 export default defineConfig({
   server: {
@@ -12,14 +14,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 10000
   },
   plugins: [
-    {
-      name: 'disable-vite-tsconfig-paths',
-      enforce: 'pre',
-      config(config) {
-        if (config.plugins) {
-          config.plugins = (config.plugins as any[]).filter(p => !p || p.name !== 'vite-tsconfig-paths');
-        }
-      }
-    }
+    TanStackRouterVite(),
+    react()
   ]
 });

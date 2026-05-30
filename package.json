@@ -80,7 +80,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@lovable.dev/vite-tanstack-config": "^1.4.0",
     "@tailwindcss/vite": "^4.2.4",
     "@tanstack/router-plugin": "^1.167.28",
     "@types/fluent-ffmpeg": "^2.1.28",
