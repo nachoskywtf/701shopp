@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts, useLocation, useRouterState } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, useLocation, useRouterState } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -29,43 +29,9 @@ function NotFoundComponent() {
 }
 
 export const Route = createRootRoute({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "701 Shop — Lujosos perfumes. Precios inteligentes." },
-      { name: "description", content: "Fragancias 100% originales hasta 30% más baratas. Envío a todo Chile." },
-      { property: "og:title", content: "701 Shop — Perfumes originales en Chile" },
-      { property: "og:description", content: "Fragancias 100% originales hasta 30% más baratas." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@701shop" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function TopProgressBar() {
   const isLoading = useRouterState({ select: (s) => s.status === "pending" });
