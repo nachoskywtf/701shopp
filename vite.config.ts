@@ -19,6 +19,8 @@ export default defineConfig({
   },
   plugins: [
     tailwindcss(),
-    tanstackStart()
+    tanstackStart({
+      ssr: false
+    })
   ]
 });
